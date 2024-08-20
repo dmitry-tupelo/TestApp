@@ -9,7 +9,6 @@ in case of any issues contact me dima.moiseenko89@gmail.com or TG @dmoiseenko
 TODO:
 svg
 Input component
-gradient for button
 
 Nice to have
 i18n for text strings
