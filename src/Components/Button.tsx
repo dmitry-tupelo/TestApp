@@ -12,9 +12,8 @@ const Button = (props: IButtonProps) => {
 
   return (
     <LinearGradient
-
-    start={{x: 0.15, y: 0}}
-    end={{x: 0, y: 1}}
+      start={{x: 0.15, y: 0}}
+      end={{x: 0, y: 1}}
       angle={15}
       colors={['#0098EA', '#0087DB', '#0068BF']}
       style={styles.linearGradient}>

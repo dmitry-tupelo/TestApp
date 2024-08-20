@@ -2,6 +2,7 @@ import React, {useRef} from 'react';
 import {
   KeyboardAvoidingView,
   ScrollView,
+  StyleSheet,
   Text,
   TextInput,
   View,
@@ -46,7 +47,7 @@ const Login = ({navigation}: any) => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </Text>
-        <View style={globalStyles.image}>
+        <View style={[globalStyles.image, localStyles.imageShadow]}>
           <Card />
         </View>
         <Formik
@@ -101,5 +102,19 @@ const Login = ({navigation}: any) => {
     </KeyboardAvoidingView>
   );
 };
+
+const localStyles = StyleSheet.create({
+  imageShadow: {
+    shadowColor: '#0098EA',
+    shadowOffset: {
+      width: 0,
+      height: 8,
+    },
+    shadowOpacity: 0.44,
+    shadowRadius: 10.32,
+
+    elevation: 16,
+  },
+});
 
 export default Login;
