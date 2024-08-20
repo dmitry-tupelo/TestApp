@@ -7,8 +7,10 @@
 in case of any issues contact me dima.moiseenko89@gmail.com or TG @dmoiseenko
 
 TODO:
-1. add more responsive
-2. i18n for text strings
-3. improve behavior for next button on Keyboard
-4. Input component
-5. general styles
+svg
+Input component
+gradient for button
+
+Nice to have
+i18n for text strings
+improve behavior for next button on Keyboard
