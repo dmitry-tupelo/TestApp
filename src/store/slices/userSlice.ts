@@ -39,9 +39,9 @@ export const userSlice = createSlice({
       return {
         ...state,
         user: {
-        name: action.payload.name,
-        email: action.payload.email,
-        }
+          name: action.payload.name,
+          email: action.payload.email,
+        },
       };
     },
     clearUserData: () => {
@@ -64,6 +64,5 @@ export const userSlice = createSlice({
   },
 });
 export const {storeUserData, clearUserData} = userSlice.actions;
-
 
 export default userSlice.reducer;

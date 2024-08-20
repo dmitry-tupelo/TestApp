@@ -23,7 +23,7 @@ const LoginSuccess = (props: any) => {
     <ScrollView
       contentContainerStyle={globalStyles.container}
       contentInsetAdjustmentBehavior="automatic">
-      {status === 'loading' && <ActivityIndicator />} 
+      {status === 'loading' && <ActivityIndicator />}
       {status === 'succeeded' ? (
         <>
           <Text style={globalStyles.title}>Thank you</Text>

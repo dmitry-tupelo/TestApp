@@ -9,12 +9,12 @@ import {
 import {Formik} from 'formik';
 import {useDispatch} from 'react-redux';
 
-import {activateUser, storeUserData } from '../store/slices/userSlice';
+import {activateUser, storeUserData} from '../store/slices/userSlice';
 import {SignupSchema} from '../utils/helpers';
 
 import Button from '../Components/Button';
 
-import { AppDispatch } from '../store';
+import {AppDispatch} from '../store';
 import {SCREENS} from '../navigation/screens';
 import Card from '../../assets/svg/Card';
 import {globalStyles} from '../globalStyles';
@@ -29,8 +29,8 @@ const Login = ({navigation}: any) => {
     }
   };
   const handleFormSubmit = (values: FormValues) => {
-    dispatch(activateUser())
-   dispatch(storeUserData(values));
+    dispatch(activateUser());
+    dispatch(storeUserData(values));
     navigation.navigate(SCREENS.LOGIN_SUCCESS);
   };
   return (
